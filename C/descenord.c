@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <inttypes.h>
 #include <string.h>
+#include <stdlib.h>
 
 uint64_t descendingOrder(uint64_t n)
 {
@@ -26,10 +27,14 @@ uint64_t descendingOrder(uint64_t n)
   return res;
 }
 
-int main()
+int main(int argc, const char * argv[])
 {
-		printf ("%lu\n", descendingOrder (145263));
-	
+	int inp = atoi (argv[1]); /* genera problema si no ingreso es nulo*/
+	if (inp == 0)
+		printf ("%s error, try again.\n", argv[1]);
+	else{
+		printf ("%lu\n", descendingOrder (inp));
+	}
 }
 
 
