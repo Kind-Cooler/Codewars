@@ -10,7 +10,7 @@ const char **dirReduc(const char *const array[], int length_in, int *length_out)
   Your array will be freed, but the strings will not be.
   Report the length of your array through the 'length_out' pointer.
 */
-    int i, j;
+    int i, j, x = 0;
     int mask [length_in];
 
     for (i = 0; i < length_in; i++){
