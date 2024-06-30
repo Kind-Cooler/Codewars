@@ -1,4 +1,4 @@
-/* https://www.codewars.com/kata/526571aae218b8ee490006f4 */
+/*  https://www.codewars.com/kata/526571aae218b8ee490006f4 */
 
 #include <stdio.h>
 #include <stddef.h>
