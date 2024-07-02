@@ -8,7 +8,7 @@ int cockroach_speed (double s)
 
 }
 
-void main(void)
+int main()
 {
 	printf ("%d\n", cockroach_speed (1.09));
 

@@ -1,6 +1,7 @@
 /* https://www.codewars.com/kata/52fba66badcd10859f00097e */
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 //solution must allocate all required memory
 //and return a free-able buffer to the caller.
@@ -32,7 +33,7 @@ char *disemvowel(const char *str)
 }
 
 
-void main()
+int main()
 {
 	char frase[] = "This website is for losers LOL!";
 	char *si = disemvowel (frase);

@@ -10,7 +10,7 @@ const char* even_or_odd(int number)
 		return "Odd";
 }
 
-void main (void)
+int main (void)
 {
-	printf("%s\n", even_or_odd (-1));
+	printf("%s\n", even_or_odd (99));
 }

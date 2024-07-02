@@ -1,5 +1,6 @@
 /* https://www.codewars.com/kata/526989a41034285187000de4 */
-
+#include <stdio.h>
+#include <stdlib.h>
 #include <inttypes.h>
 #include <stdio.h>
 
@@ -53,7 +54,7 @@ uint32_t ips_between (const char *start, const char *end)
 	return qips;
 }
 
-void main(void)
+int main(void)
 {
 	printf ("%u\n", ips_between ("0.0.0.0", "255.255.255.255"));
 }
