@@ -1,4 +1,4 @@
-/*   https://www.codewars.com/kata/550f22f4d758534c1100025a   */
+/*Inc   https://www.codewars.com/kata/550f22f4d758534c1100025a   */
 
 #include <stdio.h>
 #include <stdlib.h>

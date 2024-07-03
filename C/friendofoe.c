@@ -1,4 +1,4 @@
-/* https://www.codewars.com/kata/55b42574ff091733d900002f */
+/* Inc https://www.codewars.com/kata/55b42574ff091733d900002f */
 #include <stdio.h>
 
 void filter_friends (const char *names[])
@@ -24,6 +24,6 @@ void main()
 							};
 	
 	//printf ("%s\n", nombres [2][1]);
-	filter_friends (nombres[2]);
+	filter_friends (nombres[20]);
 	
 }
