@@ -54,7 +54,7 @@ uint32_t ips_between (const char *start, const char *end)
 	return qips;
 }
 
-int main(void)
+void main(void)
 {
 	printf ("%u\n", ips_between ("0.0.0.0", "255.255.255.255"));
 }
