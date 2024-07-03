@@ -17,7 +17,7 @@ size_t countBits(unsigned value)
 	return count;
 }
 
-void  main (void)
+int main ()
 {
 	printf ("%lu\n", countBits (7));
 	
