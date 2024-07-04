@@ -27,8 +27,6 @@ char *game_outcome (size_t n, const char steve[n], const char josh[n], char *out
     if (ps == pj)
         sprintf (outcome, "Tie");
 	
- //   outcome[0] = 'Q';
-   // outcome[1] = '\0';
 	return outcome;
 }
 
@@ -45,9 +43,9 @@ int val (char x)
 
 int main()
 {
-    size_t nc = 2;
-    char st[2] = {'T', '9'};
-    char jo[2] = {'T', '8'};
+    size_t nc = 10;
+    char st[10] = {'K', '2', '4', '5', '4', '3', '2', 'K', 'A', 'T'};
+    char jo[10] = {'Q', '3', '4', '6', '4', '3', '5', 'A', '8', '7'};
 
     char *res[100];
     char *p;
