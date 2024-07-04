@@ -23,7 +23,7 @@ char *game_outcome (size_t n, const char steve[n], const char josh[n], char *out
     if (ps > pj)
         sprintf (outcome, "Steve wins %d to %d", ps, pj);
     if (ps < pj)
-        sprintf (outcome, "John wins %d to %d", pj, ps);
+        sprintf (outcome, "Josh wins %d to %d", pj, ps);
     if (ps == pj)
         sprintf (outcome, "Tie");
 	
