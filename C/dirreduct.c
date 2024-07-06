@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 const char **dirReduc(const char *const array[], int length_in, int *length_out)
 {
@@ -12,27 +13,35 @@ const char **dirReduc(const char *const array[], int length_in, int *length_out)
 */
     int i, j, x = 0;
     int mask [length_in];
-
+    
+    char **reduced = malloc(length_in * sizeof *reduced);
+    
     for (i = 0; i < length_in; i++){
         printf ("%s\n", array[i]);
-        for (j = i; j < length_in; j++){
-            if (array[i] == "NORTH" && array[i+1] == "SOUTH")
-                printf ("Eliminar\n");
-
+        if (array[i] == "NORTH" && array[i+1] == "SOUTH"){
+            ;
         }
+        else
+        strcpy (reduced[x++], array[i+2]);
     } 
 
-  const char **reduced = malloc(2 * sizeof *reduced);
-  reduced[0] = "SOUTH";
-  reduced[1] = "NORTH";
-  *length_out = 2;
+    
+    for (i = 0; i < length_in; i++){
+        printf ("%s\n", array[i]);
+    }
+
+  //const char **reduced = malloc(2 * sizeof *reduced);
+  //reduced[0] = "SOUTH";
+  //reduced[1] = "NORTH";
+  *length_out = x;
   return reduced;
 }
 
 int main()
 {
-    const char *const direct[][10] = {"NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"};
-    int len = 7;
+    const char *const direct[][10] = {"NORTH", "SOUTH", "SOUTH", 
+                                        "EAST", "WEST", "NORTH", "NORTH", "WEST"};
+    int len = 8;
     int lout, i;
 
     char **resp = dirReduc (direct, len, &lout);
@@ -41,4 +50,5 @@ int main()
         printf ("%s  ", resp[i]);
     printf ("\n");
 
+    free (resp);
 }
