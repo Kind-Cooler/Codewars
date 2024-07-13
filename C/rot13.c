@@ -40,12 +40,11 @@ char *rot13(char *str_out, const char *str_in)
     return str_out;
 }
 
-void main (void)
+int main ()
 {
 	char ciph[] = "This is my first ROT13 excercise!";
 	char res[1000];
 	
 	printf ("%s\n", rot13 (res, ciph)); // grfg
 	printf ("\n");
-	
 }
